@@ -13,7 +13,7 @@ public class Solution50{
             return false;
         }
         else{
-            //Note that any primes greater than 2 or 3 can be expressed in the form 6k+1 of 6k - 1.
+            //Note that any primes greater than 2 or 3 can be expressed in the form 6k+1 or 6k - 1.
             for(int i = 5; i <= Math.sqrt(num);i+=6){
                 //Check if num is divisible by 6k + 1 or 6k - 1.
                 if(num % i == 0 || num % (i + 2) == 0){
